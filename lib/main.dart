@@ -5,6 +5,8 @@ import 'package:animationapp/routes/implicit/anim_container.dart';
 import 'package:animationapp/routes/implicit/anim_opacity.dart';
 import 'package:animationapp/routes/implicit/anim_padding.dart';
 import 'package:animationapp/routes/implicit/tween_anim.dart';
+import 'package:animationapp/widgets/custom-drawer-v2.dart';
+import 'package:animationapp/widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/raised_app_button.dart';
@@ -20,7 +22,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: MyHomePage(title: 'Flutter Animations'),
+//      home: MyHomePage(title: 'Flutter Animations'),
+//      home: CustomDrawer(),
+      home: CustomDrawer_V2(),
       routes: {
         '/${MAIN_ROUTES.IMPLICIT}': (context) => ImplicitAnimationRoute(),
         '/${MAIN_ROUTES.IMPLICIT}/${IMPLICIT_ROUTES.CONTAINER}': (context) =>
