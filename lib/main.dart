@@ -7,8 +7,10 @@ import 'package:animationapp/routes/implicit/anim_padding.dart';
 import 'package:animationapp/routes/implicit/tween_anim.dart';
 import 'package:animationapp/widgets/custom-drawer-v2.dart';
 import 'package:animationapp/widgets/custom_drawer.dart';
+import 'package:animationapp/widgets/flights-stepper.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/multibar.dart';
 import 'widgets/raised_app_button.dart';
 
 void main() => runApp(MyApp());
@@ -24,7 +26,9 @@ class MyApp extends StatelessWidget {
       ),
 //      home: MyHomePage(title: 'Flutter Animations'),
 //      home: CustomDrawer(),
-      home: CustomDrawer_V2(),
+//      home: CustomDrawer_V2(),
+      home: Multibar(),
+//      home: FlightsStepper(),
       routes: {
         '/${MAIN_ROUTES.IMPLICIT}': (context) => ImplicitAnimationRoute(),
         '/${MAIN_ROUTES.IMPLICIT}/${IMPLICIT_ROUTES.CONTAINER}': (context) =>
