@@ -8,6 +8,8 @@ import 'package:animationapp/routes/implicit/tween_anim.dart';
 import 'package:animationapp/widgets/custom-drawer-v2.dart';
 import 'package:animationapp/widgets/custom_drawer.dart';
 import 'package:animationapp/widgets/flights-stepper.dart';
+import 'package:animationapp/widgets/skintone_selector.dart';
+import 'package:animationapp/widgets/transform_examples.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/multibar.dart';
@@ -25,8 +27,9 @@ class MyApp extends StatelessWidget {
       ),
 //      home: MyHomePage(title: 'Flutter Animations'),
 //      home: CustomDrawer(),
-//      home: CustomDrawer_V2(),
-      home: Multibar(),
+//      home: TransformExamples(),
+      home: SkintoneSelector(),
+//      home: Multibar(),
 //      home: FlightsStepper(),
       routes: {
         '/${MAIN_ROUTES.IMPLICIT}': (context) => ImplicitAnimationRoute(),

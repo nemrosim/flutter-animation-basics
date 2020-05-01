@@ -149,7 +149,8 @@ class _CustomDrawer_V2State extends State<CustomDrawer_V2>
                 Positioned(
                   top: 16.0 + MediaQuery.of(context).padding.top,
                   left: animationController.value *
-                      MediaQuery.of(context).size.width,
+                          MediaQuery.of(context).size.width -
+                      50,
                   width: MediaQuery.of(context).size.width,
                   child: Text(
                     'Some AppName',
