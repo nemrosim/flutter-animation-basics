@@ -1,18 +1,16 @@
 import 'package:animationapp/constants/routes.dart';
+import 'package:animationapp/pages/scrollable_gallery/index.dart';
 import 'package:animationapp/routes/explicit.dart';
 import 'package:animationapp/routes/implicit.dart';
 import 'package:animationapp/routes/implicit/anim_container.dart';
 import 'package:animationapp/routes/implicit/anim_opacity.dart';
 import 'package:animationapp/routes/implicit/anim_padding.dart';
 import 'package:animationapp/routes/implicit/tween_anim.dart';
-import 'package:animationapp/widgets/custom-drawer-v2.dart';
-import 'package:animationapp/widgets/custom_drawer.dart';
-import 'package:animationapp/widgets/flights-stepper.dart';
-import 'package:animationapp/widgets/skintone_selector.dart';
-import 'package:animationapp/widgets/transform_examples.dart';
 import 'package:flutter/material.dart';
 
-import 'widgets/multibar.dart';
+import 'pages/gesture_detector/index.dart';
+import 'pages/multibar/multibar.dart';
+import 'widgets/custom-drawer-v2.dart';
 import 'widgets/raised_app_button.dart';
 
 void main() => runApp(MyApp());
@@ -28,7 +26,10 @@ class MyApp extends StatelessWidget {
 //      home: MyHomePage(title: 'Flutter Animations'),
 //      home: CustomDrawer(),
 //      home: TransformExamples(),
-      home: SkintoneSelector(),
+//      home: SkintoneSelectorApp(),
+//      home: ScrollableGallery(),
+//      home: CustomDrawer_V2(),
+      home: GestureDetectorPage(),
 //      home: Multibar(),
 //      home: FlightsStepper(),
       routes: {
