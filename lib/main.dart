@@ -1,4 +1,5 @@
 import 'package:animationapp/constants/routes.dart';
+import 'package:animationapp/pages/3dCube/index.dart';
 import 'package:animationapp/pages/scrollable_gallery/index.dart';
 import 'package:animationapp/routes/explicit.dart';
 import 'package:animationapp/routes/implicit.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
 //      home: ScrollableGallery(),
 //      home: CustomDrawer_V2(),
       home: GestureDetectorPage(),
+//      home: Cube3DPage(),
 //      home: Multibar(),
 //      home: FlightsStepper(),
       routes: {
