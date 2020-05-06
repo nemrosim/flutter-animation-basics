@@ -1,5 +1,7 @@
 import 'package:animationapp/constants/routes.dart';
 import 'package:animationapp/pages/3dCube/index.dart';
+import 'package:animationapp/pages/Navigation_Rail_Demo/index.dart';
+import 'package:animationapp/pages/provider/async_provider.dart';
 import 'package:animationapp/pages/scrollable_gallery/index.dart';
 import 'package:animationapp/routes/explicit.dart';
 import 'package:animationapp/routes/implicit.dart';
@@ -11,8 +13,12 @@ import 'package:flutter/material.dart';
 
 import 'pages/gesture_detector/index.dart';
 import 'pages/multibar/multibar.dart';
+import 'pages/provider/index.dart';
 import 'widgets/custom-drawer-v2.dart';
 import 'widgets/raised_app_button.dart';
+
+//void main() => runApp(ProviderPage());
+//void main() => runApp(AsyncProviderPage());
 
 void main() => runApp(MyApp());
 
@@ -30,7 +36,10 @@ class MyApp extends StatelessWidget {
 //      home: SkintoneSelectorApp(),
 //      home: ScrollableGallery(),
 //      home: CustomDrawer_V2(),
-      home: GestureDetectorPage(),
+//      home: GestureDetectorPage(),
+//      home: ProviderPage(),
+//      home: AsyncProviderPage(),
+      home: NavigationRailDemo(),
 //      home: Cube3DPage(),
 //      home: Multibar(),
 //      home: FlightsStepper(),
